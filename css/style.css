@@ -12,6 +12,7 @@ body {
 
   background-color: lightgreen;
   font-size: 64px;
+  height: auto;
 
 }
 
@@ -20,6 +21,11 @@ button.agregar{
   font-size: 64px;
 }
 
+.share{
+
+  font-size: 32px;
+
+}
 .autocomplete {
   /*the container must be positioned relative:*/
   position: relative;
