@@ -1,6 +1,6 @@
 * { box-sizing: border-box; }
 body {
-  font: 32px Arial;
+  font: 64px Arial;
 }
 
 .search{
@@ -11,12 +11,13 @@ body {
 #shopping_Cart{
 
   background-color: lightgreen;
+  font-size: 64px;
 
 }
 
 button.agregar{
 
-  font-size: 32px;
+  font-size: 64px;
 }
 
 .autocomplete {
