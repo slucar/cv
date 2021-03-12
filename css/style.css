@@ -1,28 +1,45 @@
+
 * { box-sizing: border-box; }
+
 body {
-  font: 64px Arial;
+  font-family: 'Kalam', cursive;
+  font-size: 64px;
+
 }
 
 .search{
-  background-color: yellow;
+  font-family: 'Kalam', cursive;
+  font-weight: bold;
+
+  font-size: 32px;
+  background-color: #eb5e0b;
+  padding: 1%;
+  align-content: center;
 
 }
 
 #shopping_Cart{
+  font-family: 'Kalam', cursive;
+  font-size: 32px;
 
-  background-color: lightgreen;
-  font-size: 64px;
+  background-color: #f0c929;
+
   height: auto;
 
 }
 
 button.agregar{
 
-  font-size: 64px;
+  font-family: 'Kalam', cursive;
+  font-size: 32px;
+
+
 }
+
 
 .share{
 
+  font-family: 'Kalam', cursive;
   font-size: 32px;
 
 }
@@ -30,6 +47,7 @@ button.agregar{
   /*the container must be positioned relative:*/
   position: relative;
   display: inline-block;
+  padding: 0.5%;
 }
 
 input {

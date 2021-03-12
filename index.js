@@ -110,6 +110,8 @@ document.addEventListener("click", function (e) {
 function add(){
 
 var product = document.querySelector("#myInput").value;
+var cantidad = document.querySelector("#cantidad").value;
+var unidad = document.querySelector("#unidad").value;
 
 if (product === "") {
   return;
@@ -123,12 +125,15 @@ if (product === "") {
 
     listItem = document.createElement('li');
 
-    listItem.innerHTML = product;
+    listItem.innerHTML = product+" "+cantidad+ " "+unidad;
 
     listElement.appendChild(listItem);
 
   }
 
 document.querySelector("#myInput").value = "";
+document.querySelector("#cantidad").value = "";
+document.querySelector("#unidad").value = "";
+
 
 }

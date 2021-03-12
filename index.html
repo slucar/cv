@@ -4,42 +4,71 @@
     <meta charset="utf-8">
     <title>Compras</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+
 
   </head>
   <body>
 
     <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="search">
-        <form autocomplete="off" action="">
-          <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="myCountry" placeholder="buscar producto">
-          </div>
-          <button class="agregar" onclick="add(); return false;">Agregar a mi lista</button>
-        </form>
-      </div>
 
-      </div>
-      <div class="col-lg-6">
-        <div id="shopping_Cart">
-        <p>Su lista aparecera aqui</p>
+      <div class="col">
+
+        <div class="search">
+          <p> Ingrese el nombre del producto que quiere pedir aqui...</p>
+
+          <form autocomplete="off" action="">
+            <div class="autocomplete" style="width:300px;">
+              <input id="myInput" type="text" name="myCountry" placeholder="nombre del producto">
+            </div>
+            <div class="autocomplete" style="width:200px;">
+            <input id="cantidad" type="text" name="cantidad" placeholder="cantidad">
+            </div>
+            <div class="autocomplete" style="width:200px;">
+            <input id="unidad" type="text" name="unidad" placeholder="unidad g,kg,lt">
+            </div>
+
+            <p></p>
+            <p>Haga click al botón para agregar a su lista. La lista esta más abajo...</p>
+            <button type="button" class="btn btn-primary agregar" onclick="add(); return false;">Añadir a mi lista</button>
+
+          </form>
 
         </div>
 
       </div>
+
+
     </div>
+
     <div class="row">
-      <div class="col-lg-6 share">
 
-        <a href="whatsapp://send?text=https://slucar.github.io/cv/" data-action="share/whatsapp/share">Share via Whatsapp</a>
+      <div class="col">
+          <div id="shopping_Cart">
+            <p>Su lista aparecera aquí y cuando termine la podrá compartir</p>
+          </div>
+      </div>
 
+    </div>
+
+    <div class="row">
+
+      <div class="col share">
+        <p></p>
+        <p>Haga click aquí abajo para compartir</p>
+        <a href="whatsapp://send?text=https://slucar.github.io/cv/" data-action="share/whatsapp/share">Compartir por Whatsapp</a>
 
       </div>
 
     </div>
+
   </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
   <script src="index.js"></script>
 
