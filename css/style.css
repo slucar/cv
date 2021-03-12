@@ -11,7 +11,7 @@ body {
   font-family: 'Kalam', cursive;
   font-weight: bold;
 
-  font-size: 32px;
+  font-size: 64px;
   background-color: #eb5e0b;
   padding: 1%;
   align-content: center;
@@ -20,10 +20,9 @@ body {
 
 #shopping_Cart{
   font-family: 'Kalam', cursive;
-  font-size: 32px;
-
+  font-size: 64px;
+  font-weight: bold;
   background-color: #f0c929;
-
   height: auto;
 
 }
@@ -31,7 +30,7 @@ body {
 button.agregar{
 
   font-family: 'Kalam', cursive;
-  font-size: 32px;
+  font-size: 64px;
 
 
 }
@@ -40,8 +39,8 @@ button.agregar{
 .share{
 
   font-family: 'Kalam', cursive;
-  font-size: 32px;
-
+  font-size: 64px;
+  background-color: lightgreen;
 }
 .autocomplete {
   /*the container must be positioned relative:*/
@@ -54,7 +53,7 @@ input {
   border: 1px solid transparent;
   background-color: #f1f1f1;
   padding: 10px;
-  font-size: 32px;
+  font-size: 64px;
 }
 input[type=text] {
   background-color: #f1f1f1;
