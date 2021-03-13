@@ -10,19 +10,18 @@ body {
 .search{
   font-family: 'Kalam', cursive;
   font-weight: bold;
-
   font-size: 64px;
-  background-color: #eb5e0b;
+  background-color: #ffab73;
   padding: 1%;
   align-content: center;
-
 }
 
 #shopping_Cart{
   font-family: 'Kalam', cursive;
+  color:blue;
   font-size: 64px;
   font-weight: bold;
-  background-color: #f0c929;
+  background-color: #ffd384;
   height: auto;
 
 }
@@ -32,15 +31,14 @@ button.agregar{
   font-family: 'Kalam', cursive;
   font-size: 64px;
 
-
 }
 
 
 .share{
-
   font-family: 'Kalam', cursive;
   font-size: 64px;
-  background-color: lightgreen;
+  background-color: #fff9b0;
+
 }
 .autocomplete {
   /*the container must be positioned relative:*/

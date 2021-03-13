@@ -1,0 +1,47 @@
+body{
+
+  font-family: 'Comic Neue', cursive;
+
+}
+
+#top{
+
+background-color: #ffab73;
+
+}
+
+
+
+#middle{
+
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ffd384;
+  position:relative;
+
+}
+
+#bottom{
+
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #fff9b0;
+  position:relative;
+  font-family: 'Comic Neue', cursive;
+
+
+}
+
+
+#slogan{
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.pricing-box{
+
+padding: 3% 2%;
+font-family: 'Comic Neue', cursive;
+
+}
