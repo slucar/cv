@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <title>Compras</title>
+    <link rel="stylesheet" href="css/style_landing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0acfa0cfc0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="search">
+          <p> Ingrese el nombre del producto aqui...</p>
+          <form autocomplete="off" action="">
+            <div class="autocomplete" style="width:600px;">
+              <input id="myInput" type="text" name="myCountry" placeholder="nombre del producto">
+            </div>
+            <div class="autocomplete" style="width:300px;">
+            <input id="cantidad" type="text" name="cantidad" placeholder="cantidad">
+            </div>
+            <p></p>
+            <p>Haga click al botón y siga añadiendo productos</p>
+            <button type="button" class="btn btn-primary agregar" onclick="add(); return false;">Añadir a mi lista</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+
+          <div id="shopping_Cart">
+            </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col share">
+        <p></p>
+        <p>Escriba un comentario</p>
+        <input id="comentario" type="text" name="comentario" placeholder="comentario">
+        <a href="whatsapp://send?text=https://slucar.github.io/cv/" data-action="share/whatsapp/share">Compartir por Whatsapp</a>
+      </div>
+
+    </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
+
+  </body>
+</html>

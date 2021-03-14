@@ -107,16 +107,28 @@ document.addEventListener("click", function (e) {
 }
 
 
+var pedido = [];
+var itemNumber = 1;
+
 function add(){
 
 var product = document.querySelector("#myInput").value;
 var cantidad = document.querySelector("#cantidad").value;
+var productAction = '<button type="button" class="btn btn-primary agregar" onclick="delete(); return false;"><i class="fas fa-minus-circle"></i>  Borrar </button>';
 
-if (product === "") {
+if (product === "" || cantidad === "") {
   return;
 } else {
 
-    const divList = document.getElementById("shopping_Cart");
+  pedido[0] = ["Producto", "Cantidad", "Accion"];
+  pedido[itemNumber] = [product,cantidad,productAction];
+
+  itemNumber ++;
+
+  createTable(pedido);
+
+/*
+    divList.appendChild(listElement);
 
     listElement = document.createElement('ul');
 
@@ -127,11 +139,67 @@ if (product === "") {
     listItem.innerHTML = product+" "+cantidad;
 
     listElement.appendChild(listItem);
+*/
 
   }
 
 document.querySelector("#myInput").value = "";
 document.querySelector("#cantidad").value = "";
 
-
 }
+
+
+function createTable(array) {
+
+  var divTable = document.getElementById("shopping_Cart");
+
+  divTable.innerHTML = "";
+
+        var table = document.createElement(table);
+
+        for (var i = 0; i < array.length; i++) {
+            var row = document.createElement('tr');
+            for (var j = 0; j < array[i].length; j++) {
+                var cell = document.createElement('td');
+
+                /*cell.textContent = array[i][j];*/
+
+                cell.innerHTML = array[i][j];
+
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+
+        /*return table;*/
+
+        var divTable = document.getElementById("shopping_Cart");
+
+        divTable.appendChild(table).class="table";
+
+
+    }
+/*
+  var table = document.createElement('table');
+  var tableBody = document.createElement('tbody');
+  var divTable = document.getElementById("shopping_Cart");
+
+  divTable.innerHTML = "";
+
+  tableData.forEach(function(rowData) {
+    var row = document.createElement('tr');
+
+    rowData.forEach(function(cellData) {
+      var cell = document.createElement('td');
+      cell.appendChild(document.createTextNode(cellData));
+      row.appendChild(cell);
+    });
+
+    tableBody.appendChild(row);
+  });
+
+  table.appendChild(tableBody);
+
+  divTable.appendChild(table).border=3;
+
+} */
